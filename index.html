@@ -621,12 +621,6 @@
   body.lang-ja .en { display: none; }
 
   @media (max-width: 1024px) {
-    .form-row {grid-template-columns: 1fr;}
-    .contact-form {width: 100%;}
-    .form-input, .form-textarea {
-      width: 100%;
-      box-sizing: border-box;}
-      
     nav { padding: 1.5rem 2rem; }
     .nav-links { display: none; }
     #hero { grid-template-columns: 1fr; }
@@ -638,23 +632,17 @@
     .portfolio-grid { grid-template-columns: 1fr; }
     .portfolio-item:first-child { grid-column: span 1; }
     .form-row { grid-template-columns: 1fr; }
+    .contact-form { width: 100%; }
+    .form-input, .form-textarea { width: 100%; box-sizing: border-box; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
     .lang-toggle { top: 1rem; right: 1rem; }
-    /* テキスト全体のスマホ最適化 */
-      .hero-title {
-        font-size: clamp(2rem, 8vw, 3.5rem);}
-      .section-title {
-        font-size: clamp(1.8rem, 6vw, 3rem);}
-      .about-name {
-        font-size: clamp(1.5rem, 5vw, 2rem);}
-      .service-name {
-        font-size: clamp(1.2rem, 4vw, 1.5rem);}
-      .about-text {
-        font-size: clamp(0.8rem, 3vw, 0.9rem);}
-      .service-desc {
-        font-size: clamp(0.75rem, 3vw, 0.82rem);}
-      .hero-subtitle {
-        font-size: clamp(0.8rem, 3vw, 0.85rem);}
+    .hero-title { font-size: clamp(2rem, 8vw, 3.5rem); }
+    .section-title { font-size: clamp(1.8rem, 6vw, 3rem); }
+    .about-name { font-size: clamp(1.5rem, 5vw, 2rem); }
+    .service-name { font-size: clamp(1.2rem, 4vw, 1.5rem); }
+    .about-text { font-size: clamp(0.8rem, 3vw, 0.9rem); }
+    .service-desc { font-size: clamp(0.75rem, 3vw, 0.82rem); }
+    .hero-subtitle { font-size: clamp(0.8rem, 3vw, 0.85rem); }
   }
   img {
     width: 100%;
