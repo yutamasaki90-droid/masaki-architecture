@@ -483,7 +483,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
-  }  
+    overflow: hidden;
+  }
   .contact-left { padding-top: 1rem; }
   .contact-intro {
     font-size: 0.9rem;
@@ -643,7 +644,13 @@
     .about-text { font-size: clamp(0.8rem, 3vw, 0.9rem); }
     .service-desc { font-size: clamp(0.75rem, 3vw, 0.82rem); }
     .hero-subtitle { font-size: clamp(0.8rem, 3vw, 0.85rem); }
-  }
+    #contact {
+        overflow: hidden;
+        padding: 5rem 2rem;}
+      .contact-left, .contact-right {
+        width: 100%;
+        overflow: hidden;}
+}
   img {
     width: 100%;
     height: auto;
