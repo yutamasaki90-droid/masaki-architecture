@@ -481,9 +481,9 @@
     background: var(--cream);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 4rem;
     align-items: start;
-  }
+  }  
   .contact-left { padding-top: 1rem; }
   .contact-intro {
     font-size: 0.9rem;
@@ -955,9 +955,36 @@
       <span class="en">Let's Start<br>a Conversation</span>
     </h2>
     <p class="contact-intro">
-      <span class="ja">住まいに関するご相談を、初回は無料でお受けしています。<br>どんな小さなことでもお気軽にお問い合わせください。</span>
+      <span class="ja">住まいに関するご相談を、初回は無料でお受けしています。<br>どんな小さなことでもお気軽にお声がけください。</span>
       <span class="en">Initial consultations about your home are free of charge. Feel free to reach out about anything, however small.</span>
     </p>
+    <form class="contact-form" action="https://formspree.io/f/mdawgnpy" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label"><span class="ja">お名前</span><span class="en">Name</span></label>
+          <input type="text" name="お名前" class="form-input" placeholder="">
+        </div>
+        <div class="form-group">
+          <label class="form-label"><span class="ja">メールアドレス</span><span class="en">Email</span></label>
+          <input type="email" name="メールアドレス" class="form-input" placeholder="">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="ja">ご相談内容</span><span class="en">Subject</span></label>
+        <input type="text" name="件名" class="form-input" placeholder="">
+      </div>
+      <div class="form-group">
+        <label class="form-label"><span class="ja">詳細・ご要望</span><span class="en">Message</span></label>
+        <textarea name="メッセージ" class="form-textarea"></textarea>
+      </div>
+      <button type="submit" class="form-submit">
+        <span class="ja">送信する</span>
+        <span class="en">Send Message</span>
+      </button>
+    </form>
+  </div>
+
+  <div class="contact-right reveal">
     <div class="contact-info-item">
       <div class="contact-info-icon">✉</div>
       <div>
@@ -969,36 +996,15 @@
       <div class="contact-info-icon">◎</div>
       <div>
         <div class="contact-info-label"><span class="ja">対応エリア</span><span class="en">Service Area</span></div>
-        <div class="contact-info-value"><span class="ja">奈良・大阪・和歌山・京都（その他応相談）</span><span class="en">Nara, Osaka, Wakayama, Kyoto (others on request)</span></div>
+        <div class="contact-info-value">
+          <span class="ja">奈良・大阪・和歌山・京都（その他応相談）</span>
+          <span class="en">Nara, Osaka, Wakayama, Kyoto (others on request)</span>
+        </div>
       </div>
     </div>
-    <div style="margin-top: 2rem;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6574.762565644113!2d135.7428917709015!3d34.518566778722985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012d8fe24df47d%3A0xc2c72122ddca08b1!2z5q2j5pyo5bu656-J6Kit6KiI5LqL5YuZ5omA!5e0!3m2!1sja!2sjp!4v1773303032340!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-  </div>
-
-  <form class="contact-form reveal" action="https://formspree.io/f/mdawgnpy" method="POST">
-    <div class="form-row">
-      <div class="form-group">
-        <label class="form-label"><span class="ja">お名前</span><span class="en">Name</span></label>
-        <input type="text" name="お名前" class="form-input" placeholder="">
-      </div>
-      <div class="form-group">
-        <label class="form-label"><span class="ja">メールアドレス</span><span class="en">Email</span></label>
-        <input type="email" name="メールアドレス" class="form-input" placeholder="">
-      </div>
+    <div style="margin-top: 2rem;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.360834457789!2d135.74016971206007!3d34.51908497287206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60012d8fe24df47d%3A0xc2c72122ddca08b1!2z5q2j5pyo5bu656-J6Kit6KiI5LqL5YuZ5omA!5e0!3m2!1sja!2sjp!4v1792652235764!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>    </div>
     </div>
-    <div class="form-group">
-      <label class="form-label"><span class="ja">ご相談内容(新築・増改築・リフォーム)</span><span class="en">Subject</span></label>
-      <input type="text" name="件名" class="form-input" placeholder="">
-    </div>
-    <div class="form-group">
-      <label class="form-label"><span class="ja">詳細・ご要望</span><span class="en">Message</span></label>
-      <textarea class="form-textarea"></textarea>
-    </div>
-    <button type="submit" class="form-submit">
-      <span class="ja">送信する</span>
-      <span class="en">Send Message</span>
-    </button>
-  </form>
 </section>
 
 <!-- FOOTER -->
